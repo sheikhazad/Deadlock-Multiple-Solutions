@@ -8,6 +8,10 @@ ii)  After locking mutex, avoid calling user provided funtion (that can access/m
 iii) If you require to lock more than 1 mutex then try to user API/RAII provided by modern C++ (which are discussed in this project) 
 iv)  If you can't use API/RAII mentioned in iii) above then lock the mutexes in the same order.
 
+LOCKING GRANULARITY:
+i)  Fine-grained lock   - lock small amount of data (More complexity)
+ii) Coarse-grained lock - lock large amount of data (Less complexity)
+
 ENCLOSED FILES:
 
 1. DeadLockProducer.cpp - Shows how deadlock is produced
