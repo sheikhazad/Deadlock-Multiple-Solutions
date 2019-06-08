@@ -29,5 +29,7 @@ DEADLOCK AVOIDANCE TECHNIQUES :
 2. DeadLockSolution2.cpp - Deadlock avoidance by using std::lock() and std::lock_guard
 3. DeadLockSolution2.cpp - Deadlock avoidance by using std::lock() and std::unique_lock
 4. DeadLockSolution2.cpp - Deadlock avoidance by using C++17 - std::scoped_lock() -  RAII and lock in one go.
+
+
 TEST RESULTS:
 Test results for all cases are attached
