@@ -10,14 +10,14 @@ iv)  If you can't use API/RAII mentioned in iii) above then lock the mutexes in 
 
 LOCKING GRANULARITY:
 i)  Fine-grained lock:
-    - lock small amount of data 
-    - more complexity 
-    - more prone to deadlock
+    - lock small amount of data, 
+    - more complexity, 
+    - more prone to deadlock,
     - achieve more parallel computing i.e. less waiting for mutex
 ii) Coarse-grained lock:
-    - lock large amount of data 
-    - less complexity 
-    - less prone to deadlock
+    - lock large amount of data, 
+    - less complexity, 
+    - less prone to deadlock,
     - achieve less parallel computing i.e. more waiting for mutex
     
 ENCLOSED FILES:
