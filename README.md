@@ -9,9 +9,17 @@ iii) If you require to lock more than 1 mutex then try to user API/RAII provided
 iv)  If you can't use API/RAII mentioned in iii) above then lock the mutexes in the same order.
 
 LOCKING GRANULARITY:
-i)  Fine-grained lock   - lock small amount of data (More complexity)
-ii) Coarse-grained lock - lock large amount of data (Less complexity)
-
+i)  Fine-grained lock:
+    - lock small amount of data 
+    - more complexity 
+    - more prone to deadlock
+    - achieve more parallel computing i.e. less waiting for mutex
+ii) Coarse-grained lock:
+    - lock large amount of data 
+    - less complexity 
+    - less prone to deadlock
+    - achieve less parallel computing i.e. more waiting for mutex
+    
 ENCLOSED FILES:
 
 1. DeadLockProducer.cpp - Shows how deadlock is produced
